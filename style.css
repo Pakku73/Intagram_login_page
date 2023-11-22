@@ -3,6 +3,38 @@
     src: url(assets/FontsFree-Net-Billabong.ttf);
 }
 
+@font-face {     
+    font-family: 'Roboto';
+    src: url(assets/Roboto/Roboto-Medium.ttf);
+}
+
+@font-face {
+    
+    font-family: 'Montserrat';
+    src: url(assets/Montserrat.zip);
+}
+
+@font-face {
+    font-family: 'Segoe-UI';
+    src: url(assets/segoe-ui-4-cufonfonts-webfont/Segoe\ UI.woff);
+}
+
+@font-face {
+    font-family: 'Segoe-UI SemiBlod';
+    src: url(assets/segoe-ui-4-cufonfonts-webfont/SegoeUI-SemiBold.woff);
+}
+
+@font-face {
+    font-family: 'Segoe-UI light';
+    src: url(assets/segoeuilight/segoeuil.ttf);
+}
+
+:root{
+    --grey-spacer: rgb(219, 219, 219);
+    --ig-primary-button: #4db5f9;
+    --grey-primary-text: rgb(124, 124, 124);
+}
+
 *{
     box-sizing: border-box;
 }
@@ -21,9 +53,10 @@ body{
 }
 
 #form{
-    border: 1.4px solid rgb(224, 224, 224);
+    margin-top: 1px;
+    border: 1.4px solid var(--grey-spacer);
     width: 21.9em;
-    height: 25.2em;
+    height: 25.1em;
     padding: auto;
     display: flex;
     flex-direction: column;
@@ -32,57 +65,262 @@ body{
 }
 
 #instagram_writing{
-    margin-top: 38px;
+    margin-top: 41px;
 }
 
 
 .form1{
     display: flex;
     flex-direction: column;
-    width: 270px;
-    padding: 2px;
+    align-items: center;
+    width: 298px;
+    padding: 3px;
     /* align-items: center;
     width: 14%;
     padding: 0.2%; */
 }
 
 #form_connexion{
-    margin-top: 10%;
+    margin-top: 9.2%;
 }
 
 .form_input{
     height: 38px;
+    width: 21.8em;
+    padding: 8px;
     border-radius: 1px;
-    border: 1px solid rgb(224, 224, 224);
-    margin-top: 2px;
-    background-color: rgb(248, 247, 247);
-    font-size: 11.8px;
+    border: 1px solid var(--grey-spacer);
+    background-color: rgb(251, 250, 250);
+    font-family: 'Segoe-UI', sans-serif;
+    font-size: 12.2px;
+    /* font-size: 0.719em; */
+    font-weight: 500;
+    color: black;
+    border-radius: 3px;
+}
+
+.form_input:focus{
+    outline: none;
+    border-color: rgb(164, 164, 164);
+    /* outline: 1px solid black;
+    accent-color: black; */
 }
 
 .se_connecter{
-    background-color: #4db5f9;
+    background-color: var(--ig-primary-button);
     border: 0;
-    width: 20em;
+    /* width: 20.3em; */
+    width: 268px;
     height: 32px;
+    /* padding-top: 4px; */
     border-radius: 8px;
-    margin-top: 14px;
+    font-family: 'Segoe-UI', sans-serif;
+    font-weight: 500;
+    font-size: 14.4px;
+    margin-top: 11px;
     color: white;
+    align-content: stretch;
 
 }
 
-.or_first-separation
-.or_last-separation{
+.or_and_deco{
+    margin-top: 17px;
+    column-gap: 20px;
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    font-family: 'Segoe-UI', sans-serif;
+    font-weight: 400;
+    /* font-size: 0.78em; */
+    font-size: 12.8px;
+    color: rgb(106, 106, 106);
 }
+
+.or_and_deco::before,
+.or_and_deco::after{
+    content: "";
+    height: 1px;
+    width: 104px;
+    background-color: var(--grey-spacer);
+    /* position: absolute;
+    top: 50%; */
+}
+
+/* .or_first-separation
+.or_last-separation{
+    height: 4px;
+    width: 40px;
+    background-color:  rgb(106, 106, 106);
+} */
 
 #fb_logo{
     width: 16px;
     height: 16px;
+    display: flex;
+    text-align: center;
+    margin-right: 8px;
+    margin-top: 0.5px;
+    background: rgb(164, 164, 164);
 }
 
 .help_links{
+    margin-top: 25px;
+    display: flex;
+    text-align: center;
+    align-items: center;
     text-decoration: none;
     color:#385185;
-    font-family: var(--font-family-system);
+    font-family: 'Segoe-UI SemiBlod', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
 }
+
+.help_links_mdp{
+    margin-top: 20px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
+    color:#314674;
+    font-family: 'Segoe-UI', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+#form2{
+    margin-top: 10px;
+    border: 1.4px solid rgb(219, 219, 219);
+    width: 21.9em;
+    height: 63px;
+    padding: auto;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+}
+
+.form2_content{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    margin-top: 4px;
+}
+
+#text_form2{
+    font-family: 'Segoe-UI light', sans-serif;
+    font-weight: 500;
+    font-size: 14.4px;
+    color: black;
+}
+
+#lien_form2{
+    text-decoration: none;
+    font-family: 'Segoe-UI', sans-serif;
+    font-weight: 600;
+    font-size: 14.4px;
+    color: var(--ig-primary-button);
+    margin-left: 4px;
+}
+
+#downloadText{
+    font-family: 'Segoe-UI light', sans-serif;
+    font-weight: 200;
+    font-size: 14px;
+    margin-top: 16px;
+}
+
+.bottomImages{
+    height: 40px;
+    margin-top: 2px;
+}
+
+#googlePlay{
+    height: 40px;
+    margin-right: 4px;
+}
+
+#microsoftStore{
+    height: 40px;
+}
+
+.simpleFooterL1{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 8.3%;
+}
+
+.footer_UnderlinedLink{
+    padding: 8px;
+    text-decoration: none;
+    color: var(--grey-primary-text);
+    font-family: 'Segoe-UI', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.simpleFooterL2{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 53px;
+}
+
+.footerLine2{
+    /* display: flex;
+    justify-content: center; */
+    /* margin-top: 4px; */
+    padding: 8px;
+    text-decoration: none;
+    color: var(--grey-primary-text);
+    font-family: 'Segoe-UI', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.footerLine2_2{
+    /* display: flex;
+    justify-content: center; */
+    /* margin-top: 4px; */
+    padding: 8px;
+    text-decoration: none;
+    color: var(--grey-primary-text);
+    font-family: 'Segoe-UI', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+
+/* 
+
+Bout de codes interessant:
+
+.or_first-separation
+.or_last-separation{
+    height: 1px;
+    flex-shrink: 1;
+    position: relative;
+    flex-grow: 1;
+    background-color: rgb(164, 164, 164);
+}
+
+.or{
+    margin-top: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 0.78em;
+    color: rgb(106, 106, 106);
+} 
+
+.or_and_deco span:nth-child(3),
+.or_and_deco span:nth-child(1){
+    display: block;
+    width: 100%;
+    height: 1px;
+    color: rgb(106, 106, 106);
+}
+
+*/
+
