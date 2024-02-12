@@ -19,3 +19,5 @@ btn.addEventListener("click", (event) =>{
         passwordInput.setAttribute("type", "password")
     }
 });
+
+// verifs
