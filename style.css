@@ -58,10 +58,6 @@ body{
     width: 21.9em;
     height: 25.1em;
     padding: auto;
-    display: flex;
-    flex-direction: column;
-    align-self: center;
-    align-items: center;
 }
 
 #instagram_writing{
@@ -69,19 +65,23 @@ body{
 }
 
 
-.form1{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 298px;
-    padding: 3px;
-    /* align-items: center;
-    width: 14%;
-    padding: 0.2%; */
-}
-
 #form_connexion{
     margin-top: 9.2%;
+}
+
+.inline{
+    display: block;
+    margin-top: 6px;
+    margin-bottom: 4px;
+}
+
+.btnPassword{
+    margin-left: -63px;
+    padding: 6px;
+    border: none;
+    /* background-color: rgb(251, 250, 250); */
+    background: none;
+    font-weight: 400;
 }
 
 .form_input{
@@ -124,7 +124,6 @@ body{
 }
 
 .or_and_deco{
-    margin-top: 17px;
     column-gap: 20px;
     display: flex;
     justify-content: space-between;
@@ -290,6 +289,23 @@ body{
     font-family: 'Segoe-UI', sans-serif;
     font-weight: 500;
     font-size: 12px;
+}
+
+.hidden{
+    display: none;
+}
+
+#showPassword:hover{
+    color: rgb(164, 164, 164);
+}
+
+.select_loginPage{
+    width: 68px;
+    border: none;
+    background: none;
+    background-color: white;
+    font-family: 'Segoe-UI light';
+    color: var(--grey-primary-text);
 }
 
 
